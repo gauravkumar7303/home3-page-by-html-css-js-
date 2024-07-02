@@ -1,0 +1,872 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    overflow-x: hidden;
+    background-color: #ECECEC;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+    width: 91.66666667%;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+p {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orange;
+}
+
+.services {
+    padding: 6rem 0;
+}
+
+.top-info {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.columns {
+    display: inline-block;
+    width: 445px;
+    margin-bottom: 10px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 100%;
+    height: 750px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-cover: cover;
+    max-width: 100%;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.btn-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2d3748;
+    /* bg-gray-800 */
+    color: #ffffff;
+    /* text-white */
+    padding-left: 1rem;
+    /* px-4 */
+    padding-right: 1rem;
+    /* px-4 */
+    padding-top: 0.5rem;
+    /* py-2 */
+    padding-bottom: 0.5rem;
+    /* py-2 */
+}
+
+.btn-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2d3748;
+    /* bg-gray-800 */
+    color: #ffffff;
+    /* text-white */
+    padding-left: 1rem;
+    /* px-4 */
+    padding-right: 1rem;
+    /* px-4 */
+    padding-top: 0.5rem;
+    /* py-2 */
+    padding-bottom: 0.5rem;
+    /* py-2 */
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.nav-side {
+    display: flex;
+    justify-content: end;
+}
+
+.nav {
+    width: 100%;
+}
+
+.link:hover {
+    background-color: white;
+    color: black;
+}
+
+.columns {
+    display: inline-block;
+    width: 445px;
+}
+
+@media only screen and (max-width: 900px) {
+    .columns {
+        display: block;
+        width: 400px;
+    }
+
+    .nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 2px;
+        padding-right: 0;
+    }
+
+    .col {
+        display: block;
+    }
+
+    .column {
+        width: 400px;
+    }
+
+    .column1 {
+        width: 400px;
+    }
+    .header-top{
+        justify-content: flex-start;
+    }
+}
+
+.header-info {
+    margin: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 6rem;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    background: none;
+}
+
+.col {
+    width: 300px;
+}
+
+.column {
+    width: 400px;
+}
+
+.column1 {
+    width: 700px;
+}
+
+/* service section*/
+.text-3xl {
+    font-size: 1.875rem;
+    margin-bottom: 10px;
+}
+
+.service-card {
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.num {
+    text-align: right;
+    padding: 5px;
+}
+
+.img {
+    width: 240px;
+    height: 240px;
+    margin: 20px auto;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.card-info {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: start;
+}
+
+.service-card>img {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+}
+
+.cases {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.875rem;
+}
+
+.left {
+    width: 455px;
+}
+
+.top {
+    width: 550px;
+}
+
+.right {
+    width: 200px;
+    height: 470px;
+    padding: 0;
+}
+
+.full-review {
+    border-top: 1px solid gray;
+    height: 100px;
+    text-align: left;
+    padding: 15px;
+}
+
+.review-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-text {
+    font-size: 1.875rem;
+    padding: 15px;
+}
+
+.img-cover {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+}
+
+.img-cover1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-right {
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-top {
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+/* about section*/
+.paragraph {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.about-button {
+    padding: 16px;
+    margin-top: 48px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.about-button:hover {
+    background-color: orange;
+    color: white;
+    box-shadow: 5px 5px gray;
+}
+
+.award,
+.projects,
+.experience {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.award {
+    width: 150px;
+    height: 150px;
+    margin-top: 64px;
+    margin-left: 108px;
+}
+
+.award-title {
+    font-size: 2.25rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.award-text {
+    padding-top: 32px;
+    font-size: 1rem;
+}
+
+.projects {
+    width: 200px;
+    height: 200px;
+    margin-top: 254px;
+    margin-bottom: 10px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.projects-title {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.projects-text {
+    padding-top: 32px;
+    font-size: 1rem;
+}
+
+.experience {
+    width: 288px;
+    height: 288px;
+    background-color: orange;
+}
+
+.experience-title {
+    font-size: 3.75rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.experience-text {
+    text-align: right;
+    padding-top: 80px;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.about-image {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(1);
+    margin-left: 10px;
+    margin-top: 16px;
+}
+/* the partner section */
+.latest-work {
+    font-size: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.work-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.work-item {
+    padding: 12px;
+}
+
+.work-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.work-item:hover a {
+    color: orange;
+}
+
+.all-projects {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dallas {
+    padding-top: 80px;
+}
+
+
+.project-title {
+    font-size: 2.25rem;
+    margin:0;
+}
+
+.project-category {
+    display: block;
+}
+
+.project-description {
+    margin-top: 16px;
+}
+
+.project-button {
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+    margin-top: 96px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+.project-image-container {
+    width: 700px;
+}
+
+.project-image {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.top-partner {
+    padding-top: 64px;
+}
+
+.partners-title {
+    font-size: 1.875rem;
+    margin-bottom: 24px;
+}
+
+.partners-description {
+    font-size: 1rem;
+}
+
+.partner-card {
+    padding-top: 28px;
+}
+
+.partner-box {
+    width: 208px;
+    height: 208px;
+    padding: 16px;
+    border: 1px solid gray;
+}
+.partner-number{
+    text-align: end;
+}
+.partner-logo{
+    margin: 20px;
+}
+/* the news section */
+.news-title {
+    font-size: 1.875rem;
+    margin: 0;
+}
+
+.all-articles-button {
+    background-color: white;
+    padding: 12px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.all-articles-button:hover{
+    background-color: orange;
+    color: white;
+    box-shadow: 5px 5px gray;
+}
+
+.blogs {
+    padding-top: 80px;
+}
+
+.columns {
+    margin-bottom: 16px;
+}
+
+.blog-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-image {
+    max-width: 100%;
+}
+
+.info {
+    padding-left: 30px;
+}
+
+.blog-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.blog-category {
+    margin-bottom: 32px;
+}
+
+.blog-date {
+    display: block;
+}
+.columns1{
+    margin-bottom: 10px;
+}
+/*the contact section */
+.contact{
+    background-color: white;
+    padding-bottom: 0;
+}
+.location {
+    width: 400px;
+}
+
+.location-title {
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.map-side {
+    width: 400px;
+}
+
+.map-image {
+    max-width: 100%;
+    margin-left: -130px;
+    background-color: white;
+}
+
+.contact-info {
+    width: 800px;
+}
+
+.city-info {
+    width: 400px;
+    margin-bottom: 1rem;
+}
+
+.city-title {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.contact-details {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.form-contact {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.form-title {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.required-fields-note {
+    color: red;
+}
+
+.form-group {
+    width: 400px;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 5px;
+}
+
+.required {
+    color: red;
+}
+
+.form-input {
+    width: 85%;
+    padding: 16px;
+    border: 1px solid gray;
+}
+.form-input:hover{
+    border-color: orange;
+}
+
+.form-textarea {
+    border: 1px solid gray;
+    padding: 4px;
+}
+
+.form-file-input {
+    margin-top: 1rem;
+}
+
+.form-file-label {
+    margin-top: 0.5rem;
+}
+
+.form-checkbox {
+    margin-top: 1rem;
+}
+
+.form-checkbox-label {
+    margin-top: 0.5rem;
+}
+
+.terms-link {
+    color: gray;
+    text-decoration: underline;
+}
+
+.submit-button {
+    padding: 8px;
+    width: 13rem;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 4rem;
+}
+.submit-button:hover{
+    background-color: orange;
+    color: white;
+    box-shadow: 5px 5px gray;
+}
+/* the footer section*/
+.footer {
+    padding: 64px 0;
+    background-color: #393E46;
+    color: white;
+}
+.top-footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 24rem;
+}
+
+.private-client {
+    width: 24rem;
+}
+
+.nav-links {
+    width: 24rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 0.25rem;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-box {
+    padding-top: 30px;
+}
+
+.description {
+    width: 316px;
+}
+
+.description-title {
+    font-size: 2rem;
+}
+
+.contact-details {
+    width: 316px;
+}
+
+.contact-info {
+    margin-bottom: 24px;
+}
+
+.city-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-list {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.works {
+    width: 316px;
+}
+
+.works-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.works-list {
+    list-style: none;
+    padding: 0;
+}
+
+.works-list li {
+    padding: 0.5rem 0;
+}
+
+.social {
+    width: 316px;
+}
+
+.social-title {
+    font-size: 2rem;
+}
+
+.last-row {
+    padding-top: 64px;
+}
+
+.language-selector {
+    width: 24rem;
+}
+
+.language-dropdown {
+    padding: 8px;
+    background: none;
+    border: 1px solid white;
+    color: black;
+}
+
+.footer-note {
+    width: 24rem;
+}
+
+.footer-note p {
+    margin: 0;
+}
+.links{
+    color: white;
+}
