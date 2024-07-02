@@ -184,6 +184,16 @@ h1 {
         padding-left: 2px;
         padding-right: 0;
     }
+        .header-info{
+        max-width: 100%;
+        padding-top: 30px;
+    }
+    .carousel-item{
+        height: 850px;
+    }
+    .right{
+        width:400px;
+    }
 
     .col {
         display: block;
